@@ -1,0 +1,10 @@
+
+Crear Proyecto React:
+	- npx create-react-app nombreproyecto
+
+Arrancar el proyecto:
+	- npm start
+	- npm run build
+
+Arrancar los test
+	- npm test
