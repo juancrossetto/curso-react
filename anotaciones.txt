@@ -1,0 +1,16 @@
+
+Crear Proyecto React:
+	1- npm rm -g create-react-app
+        2- npm install -g create-react-app
+        3- npx create-react-app my-app
+
+Arrancar el proyecto:
+	- npm start
+	- npm run build
+
+Arrancar los test
+	- npm test
+
+Para crear build:
+	- npm run build
+	Esto genera la carpeta build y podemos pegarla en https://app.netlify.com/teams/juancrossetto/sites

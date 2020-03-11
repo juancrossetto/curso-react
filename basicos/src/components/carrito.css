@@ -1,0 +1,7 @@
+.carrito{
+    position:fixed;
+    top:0;    /* para que este arriba de todo */
+    right: 0; /* para que este a la derecha */
+    background-color: white;
+    width: 400px;
+}
