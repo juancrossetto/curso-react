@@ -18,13 +18,7 @@ const ListadoTareas = () => {
  
 
      
-    const tareasProyecto = [
-        { nombre: 'Elegir Plataforma', estado: true},
-        { nombre:'Elegir Colores', estado: false},
-        { nombre:'Elegir Plataformas de pago' , estado: false},
-        { nombre: 'Elegir Hosting', estado: true},
-
-    ]
+    const tareasProyecto = [];
 
     return ( 
         <Fragment>

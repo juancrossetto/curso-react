@@ -7,7 +7,7 @@ import { FORMULARIO_PROYECTO,
          ELIMINAR_PROYECTO }  from '../../types'; 
 
 
-//Este recuder lo que hace es cambiar el state de proyectoState
+//Este reducer lo que hace es cambiar el state de proyectoState
 
 export default ( state, action ) => {
     switch(action.type) {
