@@ -14,3 +14,38 @@ Arrancar los test
 Para crear build:
 	- npm run build
 	Esto genera la carpeta build y podemos pegarla en https://app.netlify.com/teams/juancrossetto/sites
+
+
+Para crear proyecto NodeJS:
+
+1- En la una terminal parandonos sobre la carpeta donde queremos crear el proyecto ejecutamos:
+	- npm init    (nos va a crear el package.json)
+2- Cuando ejecutemos ese comando nos va a pedir datos:
+	2-1: package name : nombre del proyecto
+	2-2: version: 1
+	2-3: description: descripcion del proyecto
+	2-4: entry point: archivo por el cual va a iniciar el programa
+	2-5: test command: NADA
+        2-6: git repository: NADA
+	2-7: keywords: NADA
+	2-8: Author: nuestro nombre
+	2-9: Licence: MIT
+	2-10: Damos OK
+
+3- instalamos dependencias:
+	-npm install -D nodemon
+	-npm i express mongoose dotenv
+
+
+4- para arrancar el servidor(con NextJS tmb)
+	-npm run dev (para arrancar en ambiente desarrollo)
+
+
+
+
+Nodemon: Cuando ejecutamos el servidor de NodeJS con un cambio, esta libreria hace que se refresque automaticamente el servidor sin hacerlo manualmente. (SOLO FUNCIONA LOCALMENTE NO EN EL SERVIDOR).
+Mongoose : ORM de MongoDB (Fundamental para conectarse a MongoDB desde JS)
+Express: Framework para trabajar con protocolo http, definir rutas, crear acciones, metodos, etc.
+dotenv: Nos permite crear un archivo que dependiendo el entorno(local,desa,prod) tienen diferentes valores.
+
+GUIA Para NextJS y SSR(Server side rendering): https://medium.com/@jonathanrojaslpez/entrando-en-el-mundo-de-next-js-parte-1-8de255877bc
