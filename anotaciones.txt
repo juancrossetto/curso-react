@@ -43,6 +43,15 @@ Para crear proyecto NodeJS:
 
 
 
+
+Deploy Servidor en Heroku:
+Luego de instalar Heroku CLI
+	1- Abrir git bash dentro de la carpeta donde mapeamos el repo y escribir: heroku login
+	2- se abrira una pagina nos logeamos y la cerramos.
+	3- escribimos en la consola: heroku create --remote production (Esto crea la app)
+	4- escribimos: git remote -v
+	5- escribimos: git push production master
+
 Nodemon: Cuando ejecutamos el servidor de NodeJS con un cambio, esta libreria hace que se refresque automaticamente el servidor sin hacerlo manualmente. (SOLO FUNCIONA LOCALMENTE NO EN EL SERVIDOR).
 Mongoose : ORM de MongoDB (Fundamental para conectarse a MongoDB desde JS)
 Express: Framework para trabajar con protocolo http, definir rutas, crear acciones, metodos, etc.
