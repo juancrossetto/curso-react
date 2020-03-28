@@ -47,7 +47,7 @@ const Login = (props) => {
         e.preventDefault();
 
         // Validar que no haya campos vacios
-        if(email.trim() === '' | password.trim() === '')
+        if(email.trim() === '' || password.trim() === '')
         {
             mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
         }
@@ -61,7 +61,7 @@ const Login = (props) => {
         <div className="form-usuario">
             {alerta ? (<div className={`alerta ${alerta.categoria}`}>{alerta.msg}</div>) : null}
             <div className="contenedor-form sombra-dark">
-                <h1>Iniciar Sesion</h1>
+                <h1>Iniciar Sesión</h1>
                 
                 <form
                     onSubmit={onSubmit}
@@ -79,7 +79,7 @@ const Login = (props) => {
                     </div>
 
                     <div className="campo-form">
-                        <label htmlFor="email">Password</label>
+                        <label htmlFor="password">Password</label>
                         <input
                             type="password"
                             id="password"

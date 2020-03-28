@@ -11,14 +11,14 @@ const Tarea = ({tarea}) => {
 
     // Obtener las funciones del context de tareas
     const tareasContext = useContext(tareaContext);
-    const { eliminarTarea, obtenerTareas, cambiarEstadoTarea, guardarTareaActual } = tareasContext;
+    const { eliminarTarea, obtenerTareas, actualizarTarea, guardarTareaActual } = tareasContext;
 
     // Extraer el proyecto
     const [proyectoActual] = proyecto; //extraigo proyecto actual de proyecto con destructuring
 
     // Función que se ejecuta cuando el usuario presiona el boton de eliminarTarea
     const tareaEliminar = id =>{
-        eliminarTarea(id);
+        eliminarTarea(id, proyectoActual._id);
         obtenerTareas(proyectoActual.id);
     }
 
@@ -29,7 +29,7 @@ const Tarea = ({tarea}) => {
         } else {
             tarea.estado = true;
         }
-        cambiarEstadoTarea(tarea);
+        actualizarTarea(tarea);
     }
 
     // Agrega una tarea actual cuando el usuario edesea editarla
@@ -72,7 +72,7 @@ const Tarea = ({tarea}) => {
                 <button
                       type="button"
                       className="btn btn-secundario"
-                      onClick={() => tareaEliminar(tarea.id)}
+                      onClick={() => tareaEliminar(tarea._id)}
                 >Eliminar</button>
             </div>
         </li>

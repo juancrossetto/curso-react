@@ -1,10 +1,12 @@
 
-import { REGISTRO_EXITOSO,
+import {
+         REGISTRO_EXITOSO,
          REGISTRO_ERROR,
          OBTENER_USUARIO,
          LOGIN_EXITOSO,
          LOGIN_ERROR,
-         CERRAR_SESION }  from '../../types'; 
+         CERRAR_SESION 
+}  from '../../types'; 
 
 
 //Este reducer lo que hace es cambiar el state de proyectoState

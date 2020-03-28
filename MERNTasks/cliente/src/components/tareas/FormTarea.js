@@ -26,7 +26,7 @@ const FormTarea = () => {
 
     // State del formulario
     const [tarea, guardarTarea] = useState({
-        nombre:'',
+        nombre:''
     });
 
     // extraer el nombre del proyecto
@@ -59,8 +59,7 @@ const FormTarea = () => {
         if(tareaseleccionada === null) {
             //tarea nueva
             // agregar la nueva tarea al state de tareas
-            tarea.proyectoId = proyectoActual.id;
-            tarea.estado = false;
+            tarea.proyecto = proyectoActual._id;
             agregarTarea(tarea);
         } else {
             // actualiza tarea existente
@@ -100,7 +99,7 @@ const FormTarea = () => {
                 <div className="contenedor-input">
                     <input 
                         type="submit"
-                        className="btn btn-primario btn-submit bn-block"
+                        className="btn btn-primario btn-submit btn-block"
                         value={tareaseleccionada ? 'Editar Tarea' : 'Agregar Tarea'}
                     />
                 </div>

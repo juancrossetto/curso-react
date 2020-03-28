@@ -3,7 +3,6 @@ import {
     AGREGAR_TAREA,
     VALIDAR_TAREA,
     ELIMINAR_TAREA,
-    ESTADO_TAREA,
     TAREA_ACTUAL,
     ACTUALIZAR_TAREA,
     LIMPIAR_TAREA
@@ -17,12 +16,12 @@ export default (state, action) => {
         case TAREAS_PROYECTO:
             return {
                 ...state,
-                tareasproyecto: state.tareas.filter(tarea => tarea.proyectoId === action.payload)
+                tareasproyecto: action.payload
             }
         case AGREGAR_TAREA:
                 return {
                     ...state,
-                    tareas: [action.payload, ...state.tareas] ,// Creamos un arreglo nuevo de tareas con las q ya teniamos mas la nueva
+                    tareasproyecto: [action.payload, ...state.tareasproyecto] ,// Creamos un arreglo nuevo de tareas con las q ya teniamos mas la nueva
                     // puse primero el payload y despues la lista de tareas para que cuando agrego una tarea este primera
                     errortarea: false
                 }
@@ -34,13 +33,12 @@ export default (state, action) => {
         case ELIMINAR_TAREA:
             return {
                 ...state,
-                tareas: state.tareas.filter( t => t.id !== action.payload)
+                tareasproyecto: state.tareasproyecto.filter( t => t._id !== action.payload)
             }
         case ACTUALIZAR_TAREA:
-        case ESTADO_TAREA:
             return {
                 ...state,
-                tareas : state.tareas.map(t => t.id === action.payload.id ? action.payload : t )
+                tareasproyecto : state.tareasproyecto.map(t => t._id === action.payload._id ? action.payload : t )
             }
         case TAREA_ACTUAL:
             return {

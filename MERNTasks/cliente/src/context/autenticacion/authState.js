@@ -1,15 +1,17 @@
 
 import React, { useReducer } from 'react';
-import { REGISTRO_EXITOSO,
-    REGISTRO_ERROR,
-    OBTENER_USUARIO,
-    LOGIN_EXITOSO,
-    LOGIN_ERROR,
-    CERRAR_SESION }  from '../../types'; 
 import AuthReducer from './authReducer';
 import AuthContext from './authContext';
 import clienteAxios from '../../config/axios';
 import tokenAuth from '../../config/token';
+import { 
+        REGISTRO_EXITOSO,
+        REGISTRO_ERROR,
+        OBTENER_USUARIO,
+        LOGIN_EXITOSO,
+        LOGIN_ERROR,
+        CERRAR_SESION
+}  from '../../types'; 
 
 const AuthState = (props) => {
     const initialState = {
@@ -122,8 +124,7 @@ const AuthState = (props) => {
                 usuarioAutenticado,
                 cerrarSesion
             }}
-        >
-            {props.children}
+        >{props.children}
         </AuthContext.Provider>
     );
 }
