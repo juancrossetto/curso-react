@@ -1,0 +1,7 @@
+
+
+primero instalar:   npm install -g json-server
+
+luego crer json al mismo nivel q la carpeta src
+
+luego ejecutar en terminal:    json-server db.json --4001

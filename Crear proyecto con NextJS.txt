@@ -1,0 +1,2 @@
+en el directorio donde queremos crear el proyecto, ejecutamos en la consola de node:
+	1- create-next-app nombreapp
