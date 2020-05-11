@@ -1,2 +1,6 @@
 en el directorio donde queremos crear el proyecto, ejecutamos en la consola de node:
 	1- create-next-app nombreapp
+
+Para arrancar proyecto:
+	- npm run dev
+	- npm start (mas usado para produccion)

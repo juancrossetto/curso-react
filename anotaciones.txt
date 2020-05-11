@@ -5,8 +5,8 @@ Crear Proyecto React:
         3- npx create-react-app my-app
 
 Arrancar el proyecto:
-	- npm start
-	- npm run build
+	- npm start  (por lo gral se usa para produccion)
+	- npm run dev
 
 Arrancar los test
 	- npm test
