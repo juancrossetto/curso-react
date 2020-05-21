@@ -12,7 +12,11 @@ class Firebase {
             app.initializeApp(firebaseConfig)
         }
         this.auth = app.auth();
+
+        // para indicarle que use firestore.
         this.db = app.firestore();
+
+        // para indicarle que use firestorage (para subir imagenes)
         this.storage = app.storage();
     }
 
@@ -39,3 +43,4 @@ class Firebase {
 
 const firebase = new Firebase();
 export default firebase;
+

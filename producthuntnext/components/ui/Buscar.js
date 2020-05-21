@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { css} from '@emotion/core';
 import Router from 'next/router';
@@ -21,7 +21,6 @@ const InputSubmit = styled.button`
     background-color: white;
     border: none;
     text-indent: -9999px;
-
     &:hover {
         cursor: pointer;
     }
@@ -39,7 +38,7 @@ const Buscar = () => {
         // redireccionar a /buscar
         Router.push({
             pathname: '/buscar', 
-            query: { q : busqueda }
+            query: { q : busqueda }
         })
     }
 
