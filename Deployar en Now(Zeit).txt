@@ -1,0 +1,13 @@
+Instalamos zeit: npm i -g now
+
+Necesitamos en el package.json la linea dentro de scripts para generar carpeta out:
+	"export": "next export"
+
+Luego (si es la primera vez q lo usamos debemos logearnos) en la terminal escribimos:
+	now login
+Nos pedira email y password 
+
+Luego escribimos:
+	now out/
+
+Y listo, nos deja la url en la terminal.

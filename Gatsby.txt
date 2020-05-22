@@ -1,0 +1,12 @@
+Para instalar gatsby globalmente(-g):
+	npm i -g gatsby-cli
+
+
+Para crear un nuevo proyecto:
+	gatsby new nombreproyecto
+
+Para arrancar aplicacion: 
+	gatsby develop
+
+Para crear build:
+	gatsby build

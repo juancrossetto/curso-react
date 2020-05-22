@@ -1,0 +1,25 @@
+Si no tenemos instalado firebase tools tenemos q instalarla en el proyecto:
+	npm install -g firebase-tools
+
+Luego ejecutamos tmb sobre la terminal del proyecot:
+	firebase login 
+Una vez logeados , generamos el build:
+	npm run build
+Luego agregamos en el package.json dentro de scripts:
+	 "export":"next export"
+y Corremos:
+	npm run export
+Eso nos creara la carpeta out
+
+Luego creamos el build de firebase, ejecutando:
+	firebase init hosting
+Despues seleccionamos la opcion "Use an existing project" 
+
+y nos va a aparecer en la lista nuetro proyecto y le damos enter.
+Luego nos dice que si queremos usar el directorio public pero tenemos que usar out, para eso escribimos:
+	out
+Luego nos pregunta si va a ser una single page: ponemos "N"
+Luego denuevo "N" 2 veces (porque nos quiere reescribir el 404.html y el index.html)
+Luego cuando ya nos dice "Firebase initialization complete!" escribimos:
+	firebase deploy
+Esto ya nos sube el proyecto a firebase.
