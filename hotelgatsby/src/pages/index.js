@@ -1,7 +1,11 @@
-import React from "react"
+import React from "react";
+import Layout from "../components/layout";
+import ImagenHotel from "../components/imagenHotel";
 
 const IndexPage = () => (
-  <h1>Gatsby Hotel</h1>
+  <Layout>
+    <ImagenHotel/>
+  </Layout>
 )
 
 export default IndexPage
